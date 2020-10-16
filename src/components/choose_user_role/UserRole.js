@@ -1,12 +1,23 @@
 import React from 'react';
+import './UserRole.css'
 
 
 
 
 
-function UserRole() {
+const UserRole=()=> {
     return (
-            <div className="UserRole">
+            <div className="user-role">
+
+
+
+                <h1>Choose your user role</h1>
+
+                <button className='btn simple-user' value="user">user </button>
+                <button className='btn admin' value="admin">admin </button>
+
+
+
 
             </div>
 
