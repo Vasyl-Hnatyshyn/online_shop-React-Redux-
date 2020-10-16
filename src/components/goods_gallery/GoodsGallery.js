@@ -18,6 +18,7 @@ const  GoodsGallery=({goodsData,addNewGoods})=> {
                                     description={item.description}
                                     addNewGoods={addNewGoods}
                                     goodsData={goodsData}
+                                    price={item.price}
 
                 />
 

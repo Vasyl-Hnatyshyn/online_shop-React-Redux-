@@ -10,19 +10,22 @@ const initialState = {
         id:'1',
         title:'title1',
         img:'',
-        description:'description'
+        description:'description',
+        price:200
 
     },{
         id:'2',
         title:'title2',
         img:'',
-        description:'description2'
+        description:'description2',
+        price:350,
 
     },{
         id:'3',
         title:'title3',
         img:'',
-        description:'description3'
+        description:'description3',
+        price:175,
 
     },]
 

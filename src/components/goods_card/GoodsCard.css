@@ -3,6 +3,7 @@
     position: relative;
     padding: 20px;
     margin: 0 15px 0 0;
+    text-align: start;
 }
 
 .delete-current-goods{
@@ -29,3 +30,4 @@
 .description{
     font-size: 16px;
 }
+

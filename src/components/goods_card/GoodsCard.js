@@ -1,7 +1,7 @@
 import React from "react";
 import './GoodsCard.css';
 
-function GoodsCard({ id,title,img,description,addNewGoods,goodsData}){
+function GoodsCard({price, id,title,img,description,addNewGoods,goodsData}){
 
     const deleteSelectedGoods = (id)=>{
     const newGoodsData = goodsData.filter(item=> item.id!==id)
@@ -18,6 +18,8 @@ function GoodsCard({ id,title,img,description,addNewGoods,goodsData}){
             <span className='title'>{title} </span>
             <img src={img} alt="" className="card-img"/>
             <p className="description">{description}</p>
+
+            <span className="price">{price}</span>
 
 
 
