@@ -25,17 +25,10 @@ const  GoodsGallery=({goodsData,addNewGoods})=> {
             })
 
             }
-
-
-
-
-
         </div>
 
     );
 }
-
-
 
 const mapStateToProps = (state) => ({
     goodsData: state.goodsData,
