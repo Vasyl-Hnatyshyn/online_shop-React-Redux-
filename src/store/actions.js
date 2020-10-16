@@ -1,18 +1,11 @@
 import {
-    SET_ELEMENTS,
-    SET_CURRENT_CARRET_DATA
+      SELECT_USER
 } from './actionsType';
 
-export const setElements = (elements) => {
+export const selectUser = (user) => {
     return {
-        type: SET_ELEMENTS,
-        payload: elements,
+        type: SELECT_USER,
+        payload: user,
     };
 };
 
-export const setCurrentCarretData = (carretData) => {
-    return {
-        type: SET_CURRENT_CARRET_DATA,
-        payload: carretData,
-    };
-};

@@ -1,3 +1,3 @@
 
-export const SET_ELEMENTS = 'SET_ELEMENTS';
-export const SET_CURRENT_CARRET_DATA = 'SET_CURRENT_CARRET_DATA';
+export const SELECT_USER = 'SELECT_USER';
+

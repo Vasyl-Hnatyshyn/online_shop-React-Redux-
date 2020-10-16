@@ -14,7 +14,7 @@ function App() {
   return (
 
 
-      <ScrollToTop>
+      // <ScrollToTop>
 
         <div className="App">
           <Header />
@@ -22,14 +22,14 @@ function App() {
           <Switch>
               <Route path="/" exact component={GoodsGallery} />
               <PrivateRoute path="/profile" component={GoodsAdd} />
-            </Switch>
+          </Switch>
             <Footer />
 
 
 
 
     </div>
-      </ScrollToTop>
+      // </ScrollToTop>
   );
 }
 
