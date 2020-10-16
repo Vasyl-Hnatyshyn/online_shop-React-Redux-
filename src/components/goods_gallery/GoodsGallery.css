@@ -1,0 +1,8 @@
+.goods-gallery{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 60%;
+    padding: 30px 40px;
+    flex-wrap: wrap;
+}

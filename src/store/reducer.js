@@ -1,5 +1,6 @@
 import {
-    SELECT_USER
+    SELECT_USER,
+    ADD_GOODS
 } from './actionsType';
 
 
@@ -32,6 +33,9 @@ const initialState = {
 
         case SELECT_USER:
             return { ...state, user: action.payload };
+
+        case ADD_GOODS:
+            return { ...state, goodsData: action.payload };
 
 
     }
