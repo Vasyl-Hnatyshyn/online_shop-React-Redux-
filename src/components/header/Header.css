@@ -1,0 +1,46 @@
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    padding: 20px 40px;
+    background: lightgrey;
+}
+
+.logo{
+    height: 40px;
+    width: 40px;
+
+}
+
+.menu-btn{
+    cursor:pointer;
+    height: 20px;
+    width: 20px;
+
+}
+
+.nav-btn{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.change-user{
+
+    background: royalblue;
+    border-radius: 8px;
+    color:white;
+    padding: 6px 10px;
+    margin: 0 60px 0 200px;
+}
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+

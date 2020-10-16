@@ -4,9 +4,8 @@ import {
 
 
 const initialState = {
-    user: '',
+    user: 'admin',
 }
-
 
  const reducer = (state = initialState, action) => {
     switch (action.type) {
@@ -19,5 +18,9 @@ const initialState = {
     return state;
 };
 
+
+
 export default reducer;
+
+
 
