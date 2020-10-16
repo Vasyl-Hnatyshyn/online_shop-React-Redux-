@@ -20,14 +20,23 @@ const  Header=({user,selectUser})=> {
         <div className="header-wrapper">
 
             <img src={logo} alt="logo" className="logo" />
+
+
+
     <div className="nav-wrapper">
             {active? <nav>
              <Link to='/goods_gallery' className='nav-btn'>goods gallery</Link>
              {user==='admin'? <Link to='/goods_add' className='nav-btn'> add goods</Link>:''}
-             {user?<Link to='/' className='nav-btn change-user' onClick={()=>selectUser('')}>change user status</Link>:''}
+             {user?<Link to='/' className='nav-btn change-user' onClick={()=> {
+                 setActive(false)
+                 selectUser('')
+             }}>change user status</Link>:''}
 
          </nav>:''}
-            <img src={ active? closeMenu:menu} alt="menu" onClick={()=>setActive(prev => !prev)}   className="menu-btn" />
+        {user?  <img src={ active? closeMenu:menu} alt="menu" onClick={()=> {
+
+            setActive(prev => !prev)
+        }}   className="menu-btn" />:''}
 
     </div>
 
@@ -42,8 +51,6 @@ const  Header=({user,selectUser})=> {
 const mapStateToProps = (state) => ({
     user: state.user,
 });
-
-
 
 const mapDispatchToProps = (dispatch) => ({
     selectUser: bindActionCreators(selectUser, dispatch)

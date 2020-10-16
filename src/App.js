@@ -19,14 +19,13 @@ const App= ({user})=> {
 <Router>
         <div className="App">
           <Header />
-            {user ?  <UserRole/>  :
-            <div className="main-section-wrapper">
+            {user ? <div className="main-section-wrapper">
             <GoodsState />
             <Switch>
               <Route path="/goods_gallery" exact component={GoodsGallery} />
               <PrivateRoute path="/goods_add" component={GoodsAdd} />
             </Switch>
-          </div> }
+          </div>:<UserRole/>  }
          <Footer />
 
 

@@ -4,7 +4,7 @@ import {
 
 
 const initialState = {
-    user: 'admin',
+    user: '',
 }
 
  const reducer = (state = initialState, action) => {
