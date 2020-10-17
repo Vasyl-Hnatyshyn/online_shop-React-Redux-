@@ -4,7 +4,7 @@ import {bindActionCreators} from "redux";
 import {addNewGoods} from "../../store/actions";
 import {connect} from "react-redux";
 
-const GoodsState =({goodsData,addNewGoods}) =>{
+const GoodsState =({goodsData,addNewGoods,user}) =>{
     const allGoods =goodsData.length
     const totalPrice =goodsData.reduce((sum,item)=>{return sum + Number(item.price)
     },0)
@@ -35,7 +35,7 @@ const GoodsState =({goodsData,addNewGoods}) =>{
                 </tr>
             </table>
 
-            <button onClick={()=>addNewGoods([])}   className='delete-all-goods'> delete all goods</button>
+            {user==='user'?'': <button onClick={()=>addNewGoods([])}   className='delete-all-goods'> delete all goods</button>}
 
 
 
@@ -46,7 +46,9 @@ const GoodsState =({goodsData,addNewGoods}) =>{
 
 
 const mapStateToProps = (state) => ({
+
     goodsData: state.goodsData,
+    user: state.user,
 });
 
 const mapDispatchToProps = (dispatch) => ({
