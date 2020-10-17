@@ -32,6 +32,9 @@ const GoodsAdd=({addNewGoods, goodsData})=> {
 
         const newGoodsData=[...goodsData,newGoodsPosition]
 
+        const  goodsDataString = JSON.stringify(newGoodsData);
+        localStorage.setItem("GalleryData", goodsDataString);
+
         addNewGoods(newGoodsData)
 
         setTitle('')
@@ -41,8 +44,6 @@ const GoodsAdd=({addNewGoods, goodsData})=> {
         setSuccess(prev=>!prev)
         setTimeout(()=>setSuccess(prev=>!prev),5000)
     }
-
-
 
     return (
         <div className="goods-add-wrapper">

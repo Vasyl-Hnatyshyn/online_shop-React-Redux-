@@ -2,11 +2,16 @@ import React from "react";
 import './GoodsCard.css';
 import cart from '../../graphic/cart.jpg';
 import  closeMenu from '../../graphic/close.png'
+
+
 const GoodsCard=({user,price, id,title,img,description,addNewGoods,goodsData})=>{
 
     const deleteSelectedGoods = (id)=>{
     const newGoodsData = goodsData.filter(item=> item.id!==id)
     addNewGoods(newGoodsData)
+
+     const  goodsDataString = JSON.stringify(newGoodsData);
+     localStorage.setItem("GalleryData", goodsDataString);
     }
 
     return (

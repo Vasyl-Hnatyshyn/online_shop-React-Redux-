@@ -35,7 +35,11 @@ const GoodsState =({goodsData,addNewGoods,user}) =>{
                 </tr>
             </table>
 
-            {user==='user'?'': <button onClick={()=>addNewGoods([])}   className='delete-all-goods'> delete all goods</button>}
+            {user==='user'?'': <button onClick={()=> {
+                addNewGoods([])
+                localStorage.setItem("GalleryData", '[]');
+
+            }}   className='delete-all-goods'> delete all goods</button>}
 
 
 
