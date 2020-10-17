@@ -2,10 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
+    height: 72px;
     width: 100%;
-    padding: 20px 40px;
-    background: lightgrey;
+    padding: 0 40px;
+    background: navy;
 }
 
 .logo{
@@ -23,18 +23,21 @@
 
 .nav-btn{
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     margin-right: 20px;
     cursor: pointer;
+    color: white;
+
 }
 
 .change-user{
 
-    background: royalblue;
+    background: white;
     border-radius: 8px;
-    color:white;
-    padding: 6px 10px;
+    color:navy;
+    padding: 8px 12px;
+
     margin: 0 60px 0 200px;
 }
 .nav-wrapper{

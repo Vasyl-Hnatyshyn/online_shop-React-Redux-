@@ -11,7 +11,7 @@ const initialState = {
         title:'title1',
         img:'',
         description:'description',
-        price:200
+        price:200,
 
     },{
         id:'2',

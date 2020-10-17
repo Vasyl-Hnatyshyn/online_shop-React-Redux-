@@ -1,0 +1,48 @@
+.goods-state-wrapper{
+    width: 40%;
+    padding: 60px 40px;
+    text-align: start;
+    height: 100%;
+    display: block;
+
+}
+
+h2 {
+ margin-left: 13%;
+    color:navy;
+}
+th{
+    width: 200px;
+    color:navy;
+    text-align: start;
+    padding: 13px 5px;
+    font-size: 20px;
+
+}
+
+
+
+td{
+    padding: 10px 5px;
+    font-size: 18px;
+}
+
+.delete-all-goods{
+    background: navy;
+    color:white;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 12px 15px;
+    width: 335px;
+    margin: 50px 0 0 0 ;
+    border:none;
+    border-radius: 8px;
+    font-weight: bold;
+    outline: none;
+    letter-spacing: 1.2px;
+}
+
+.table-value{
+    text-align: center;
+
+}

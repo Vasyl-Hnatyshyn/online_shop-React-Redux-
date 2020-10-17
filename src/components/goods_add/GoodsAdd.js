@@ -6,8 +6,6 @@ import {addNewGoods} from "../../store/actions";
 import {connect} from "react-redux";
 
 
-
-
 const GoodsAdd=({addNewGoods, goodsData})=> {
     const [title,setTitle]=useState('')
     const [img,setImg]=useState('')
@@ -16,20 +14,13 @@ const GoodsAdd=({addNewGoods, goodsData})=> {
     const [error,setError]=useState(false)
     const [success,setSuccess]=useState(false)
 
-
-    console.log(goodsData)
-
-
     const addNewGoodsToStore=()=>{
 
         if(title==='' || description ==='' || price === ''){
             setError(prev=>!prev)
             setTimeout(()=>setError(prev=>!prev),10000)
-
             return
-
         }
-
 
         const newGoodsPosition={
             id: Math.floor(Math.random() * Math.floor(1000)),
@@ -78,13 +69,6 @@ const GoodsAdd=({addNewGoods, goodsData})=> {
 
             {error? <span className="error">Please fill in all required fields</span> :''}
             {success? <span className="success">Product successfully added</span> :''}
-
-
-
-
-
-
-
 
         </div>
 

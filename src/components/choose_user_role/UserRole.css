@@ -14,7 +14,7 @@
     color:white;
     width: 320px;
     margin-bottom: 25px;
-    padding: 15px;
+    padding: 12px 15px;
     border-radius: 5px;
     border: none;
     font-weight: bold;
@@ -28,11 +28,11 @@
     background: chartreuse;
 }
 .admin{
-    background:blue;
+    background:navy;
 }
 
 h1 {
-    font-size: 45px;
+    font-size: 40px;
     margin-bottom: 60px;
-    color:purple;
+    color:navy;
 }
