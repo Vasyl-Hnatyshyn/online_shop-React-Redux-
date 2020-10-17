@@ -1,7 +1,8 @@
 import React from "react";
 import './GoodsCard.css';
-
-function GoodsCard({price, id,title,img,description,addNewGoods,goodsData}){
+import cart from '../../graphic/cart.jpg';
+import  closeMenu from '../../graphic/close.png'
+const GoodsCard=({user,price, id,title,img,description,addNewGoods,goodsData})=>{
 
     const deleteSelectedGoods = (id)=>{
     const newGoodsData = goodsData.filter(item=> item.id!==id)
@@ -11,19 +12,15 @@ function GoodsCard({price, id,title,img,description,addNewGoods,goodsData}){
     return (
         <div className="goods-card" >
 
-            <button className="delete-current-goods"
+            {user==='admin'? <button className="delete-current-goods"
             onClick={()=>deleteSelectedGoods(id)}
-            >del</button>
+            ><img src={closeMenu} alt="closeMenu" className="close-menu-card"/></button>:''}
 
             <span className='title'>{title} </span>
-            <img src={img} alt="" className="card-img"/>
-            <p className="description">{description}</p>
+            <img src={img?img:cart} alt="" className="card-img"/>
+            <p className="description-card">{description}</p>
 
-            <span className="price">{price}</span>
-
-
-
-
+            <span className="price">{price} UAH</span>
 
         </div>
 

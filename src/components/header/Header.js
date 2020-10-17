@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import './Header.css'
 import {connect} from "react-redux";
-import  logo from '../../graphic/logo_shop.png'
+import  logo from '../../graphic/logo.png'
 import  menu from '../../graphic/arm.png'
 import  closeMenu from '../../graphic/close.png'
 import { Link } from 'react-router-dom';

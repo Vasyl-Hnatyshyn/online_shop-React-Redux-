@@ -5,7 +5,7 @@ import {addNewGoods} from "../../store/actions";
 import {connect} from "react-redux";
 import GoodsCard from "../goods_card/GoodsCard";
 
-const  GoodsGallery=({goodsData,addNewGoods})=> {
+const  GoodsGallery=({user,goodsData,addNewGoods})=> {
 
     return (
         <div className="goods-gallery">
@@ -19,6 +19,7 @@ const  GoodsGallery=({goodsData,addNewGoods})=> {
                                     addNewGoods={addNewGoods}
                                     goodsData={goodsData}
                                     price={item.price}
+                                    user={user}
 
                 />
 
@@ -32,6 +33,7 @@ const  GoodsGallery=({goodsData,addNewGoods})=> {
 
 const mapStateToProps = (state) => ({
     goodsData: state.goodsData,
+    user: state.user,
 });
 
 const mapDispatchToProps = (dispatch) => ({
