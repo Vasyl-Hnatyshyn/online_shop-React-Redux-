@@ -1,0 +1,50 @@
+.goods-state-wrapper {
+  width: 37%;
+  padding: 60px 0 0 60px;
+  text-align: start;
+  height: 100vh;
+  display: block;
+  background: #4141ed0f;
+}
+
+h2 {
+  margin-left: 13%;
+  color: navy;
+}
+th {
+  width: 200px;
+  color: navy;
+  text-align: start;
+  padding: 13px 5px;
+  font-size: 20px;
+}
+
+td {
+  padding: 10px 5px;
+  font-size: 18px;
+}
+
+.delete-all-goods {
+  background: navy;
+  color: white;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 12px 15px;
+  width: 335px;
+  margin: 50px 0 0 0;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  outline: none;
+  letter-spacing: 1.2px;
+  transition: all 0.6s;
+  cursor: pointer;
+}
+
+.delete-all-goods:hover {
+  transform: scale(1.02);
+  box-shadow: -1px 3px 13px -3px rgba(120, 120, 120, 1);
+}
+.table-value {
+  text-align: center;
+}

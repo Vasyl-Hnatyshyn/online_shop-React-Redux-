@@ -1,9 +1,15 @@
 .App {
   text-align: center;
-
+  display: block;
+  height: 100vh;
 }
 
-*{
+* {
   box-sizing: border-box;
 }
 
+.main-section-wrapper {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
